@@ -1,4 +1,4 @@
-# QUnit Ninja Theme
+# QUnit Ninja Theme [![Build Status](https://travis-ci.org/Krinkle/qunit-theme-ninja.png)](https://travis-ci.org/Krinkle/qunit-theme-ninja)
 
 ## Usage
 

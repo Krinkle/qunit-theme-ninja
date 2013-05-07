@@ -6,4 +6,8 @@
 2. Remove `<link rel="stylesheet" href="qunitjs/qunit/qunit.css">`
 3. Add `<link rel="stylesheet" href="qunit-theme-ninja/qunit-theme-ninja.css">`
 
+## Example
+
 See `test/index.html` for an example.
+
+![Screenshot of v1.0.1](http://i.imgur.com/ZKG4AFr.png)

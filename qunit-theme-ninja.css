@@ -194,3 +194,7 @@ body {
 	top:-768px;
 	width:1024px;
 }
+
+.qunit-collapsed {
+	display: none;
+}

@@ -8,6 +8,6 @@
 
 ## Example
 
-See `test/index.html` for an example.
+See [`test/index.html`](https://krinkle.github.io/qunit-theme-ninja/test/) for a demo.
 
 ![Screenshot of v1.0.1](http://i.imgur.com/ZKG4AFr.png)

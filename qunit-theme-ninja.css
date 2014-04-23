@@ -104,17 +104,21 @@ body {
 }
 #qunit-tests li a {
 	color:#666;
-	margin-left:6px;
+	padding: 0 6px;
 	text-decoration:none;
 }
 #qunit-tests li a:hover {
 	color:#ccc;
 }
-#qunit-tests li a:hover,#qunit-tests li strong:hover {
+#qunit-tests li a:hover,
+#qunit-tests li strong:hover {
 	text-decoration:underline;
 }
 #qunit-tests li b.counts {
 	color:#666;
+}
+#qunit-tests li .runtime {
+	font-size: smaller;
 }
 #qunit-tests li.fail span.test-message {
 	color:#c33;

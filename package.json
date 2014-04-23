@@ -2,7 +2,7 @@
   "name": "qunit-theme-ninja",
   "title": "QUnit Ninja Theme",
   "description": "A QUnit theme for ninjas.",
-  "version": "1.0.2-pre",
+  "version": "1.1.0",
   "author": {
     "name": "jQuery Foundation and other contributors",
     "url": "https://github.com/Krinkle/qunit-theme-ninja/blob/master/AUTHORS.txt"

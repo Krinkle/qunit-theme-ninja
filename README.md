@@ -1,4 +1,4 @@
-# QUnit Ninja Theme [![Build Status](https://travis-ci.org/Krinkle/qunit-theme-ninja.png)](https://travis-ci.org/Krinkle/qunit-theme-ninja) [![NPM version](https://badge.fury.io/js/qunit-theme-ninja.png)](http://badge.fury.io/js/qunit-theme-ninja)
+# QUnit Ninja Theme [![Build Status](https://travis-ci.org/Krinkle/qunit-theme-ninja.svg?branch=master)](https://travis-ci.org/Krinkle/qunit-theme-ninja) [![NPM version](https://badge.fury.io/js/qunit-theme-ninja.svg)](https://badge.fury.io/js/qunit-theme-ninja)
 
 ## Usage
 

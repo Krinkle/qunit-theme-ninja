@@ -10,4 +10,4 @@
 
 See [`test/index.html`](https://krinkle.github.io/qunit-theme-ninja/test/) for a demo.
 
-![Screenshot of v1.0.1](http://i.imgur.com/ZKG4AFr.png)
+![Screenshot of v1.1.0](http://i.imgur.com/WJ3vsAn.png)

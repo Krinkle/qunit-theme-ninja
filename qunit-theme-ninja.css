@@ -22,6 +22,10 @@ body {
 	padding:24px;
 	position:relative;
 }
+#qunit {
+    position:relative;
+    padding:25px 0 0 0;
+}
 #qunit-header {
 	font-size:24px;
 	line-height:1;
@@ -39,8 +43,8 @@ body {
 	font:12px/12px "Menlo",monospace;
 	margin:0;
 	position:absolute;
-	right:24px;
-	top:20px;
+	right:0px;
+	top:5px;
 }
 #qunit-testresult .module-name {
 	font-weight:bold;
@@ -59,8 +63,8 @@ body {
 }
 #qunit-testrunner-toolbar {
 	position:absolute;
-	right:24px;
-	top:40px;
+	right:0;
+	top:30px;
 }
 #qunit-testrunner-toolbar input {
 	font:inherit;
@@ -74,6 +78,9 @@ body {
 	right:24px;
 	top:22px;
 }
+.qunit-filter,
+#qunit-testresult-controls,
+#qunit-modulefilter,
 #qunit-modulefilter-container label {
 	display:none;
 }

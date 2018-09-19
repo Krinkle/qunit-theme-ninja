@@ -15,10 +15,7 @@
   "bugs": {
     "url": "https://github.com/Krinkle/qunit-theme-ninja/issues"
   },
-  "license": {
-    "name": "MIT",
-    "url": "http://www.opensource.org/licenses/mit-license.php"
-  },
+  "license": "MIT",
   "keywords": [
     "qunit",
     "qunit-plugin",

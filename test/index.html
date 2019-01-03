@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>QUnit Test Suite</title>
-	<link rel="stylesheet" href="../qunit-theme-ninja.css">
-	<script src="../node_modules/qunitjs/qunit/qunit.js"></script>
-	<script src="../node_modules/qunitjs/test/test.js"></script>
-</head>
+<meta charset="UTF-8">
+<title>QUnit Test Suite</title>
+<link rel="stylesheet" href="../qunit.css">
+<script src="../node_modules/qunitjs/qunit/qunit.js"></script>
+<script>
+QUnit.test( "hello pass", function( assert ) {
+	var x = 42;
+	assert.equal(x, 42, "check x" );
+});
+QUnit.module( "example", function() {
+	QUnit.test( "hello pass also", function( assert ) {
+		var x = 42;
+		assert.equal(x, 42, "check x" );
+	});
+	QUnit.test( "hello fail", function( assert ) {
+		var x = [ "42", "43" ];
+		assert.propEqual(x, [ "42", "48" ], "check x" );
+	});
+} );
+</script>
 <body>
 	<div id="qunit"></div>
 	<div id="qunit-fixture">test markup</div>

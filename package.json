@@ -2,11 +2,13 @@
   "name": "qunit-theme-ninja",
   "title": "QUnit Ninja Theme",
   "description": "A QUnit theme for ninjas.",
+  "keywords": [
+    "qunit",
+    "qunit-plugin",
+    "qunit-theme"
+  ],
   "version": "1.1.0",
-  "author": {
-    "name": "jQuery Foundation and other contributors",
-    "url": "https://github.com/Krinkle/qunit-theme-ninja/blob/master/AUTHORS.txt"
-  },
+  "author": "Jamie Hoover <dont.tase@me.com>",
   "homepage": "https://github.com/Krinkle/qunit-theme-ninja",
   "repository": {
     "type": "git",
@@ -15,23 +17,11 @@
   "bugs": {
     "url": "https://github.com/Krinkle/qunit-theme-ninja/issues"
   },
-  "license": {
-    "name": "MIT",
-    "url": "http://www.opensource.org/licenses/mit-license.php"
-  },
-  "keywords": [
-    "qunit",
-    "qunit-plugin",
-    "qunit-theme"
+  "license": "MIT",
+  "files": [
+    "qunit.css"
   ],
-  "scripts": {
-    "test": "grunt test"
-  },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.4.3",
-    "grunt-contrib-qunit": "~0.2.1",
-    "grunt-git-authors": "~1.2.0",
     "qunitjs": "~1.11.0"
   }
 }

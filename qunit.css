@@ -3,32 +3,24 @@
  */
 
 body {
-	background: #111 no-repeat -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(1, #111));
-	background: #111 no-repeat -webkit-linear-gradient(top, #222 0%, #111 100%);
-	background: #111 no-repeat -moz-linear-gradient(top, #222 0%, #111 100%);
-	background: #111 no-repeat -o-linear-gradient(top, #222 0%, #111 100%);
-	background: #111 no-repeat -ms-linear-gradient(top, #222 0%, #111 100%);
-	background: #111 no-repeat linear-gradient(top, #222 0%, #111 100%);
-	color: #ccc;
-	font: 12px/16px "Lucida Grande",sans-serif;
+	background: #111;
+	background: #111 no-repeat linear-gradient(#222, #111);
 	margin: 0 auto;
 	max-width: 1024px;
 	min-width: 800px;
 	padding: 24px;
-	position: relative;
-}
-
-#qunit {
-	position: relative;
-	padding: 25px 0 0 0;
+	font: 12px/1.6 "Lucida Grande", sans-serif;
+	color: #ccc;
 }
 
 /* Header */
 
 #qunit-header {
+	float: left;
+	min-width: 12em;
+	margin: 0 0 1em 0;
 	font-size: 24px;
 	line-height: 1;
-	margin: 0 520px 0 0;
 }
 #qunit-header > a {
 	color: #ccc;
@@ -40,20 +32,21 @@ body {
 }
 
 #qunit-testresult {
-	font: 12px/12px "Menlo",monospace;
-	margin: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
+	font-family: "Menlo",monospace;
+	font-size: 12px;
+	padding-bottom: 1em;
 }
 #qunit-testresult .module-name {
 	font-weight: bold;
 }
 #qunit-testresult br {
-	content: '';
+	content: "";
+}
+#qunit-testresult br:after {
+	content: " ";
 }
 #qunit-testresult span:before {
-	content: ' ';
+	display: inline-block;
 }
 #qunit-testresult span.failed {
 	color: #c33;
@@ -63,9 +56,7 @@ body {
 }
 
 #qunit-testrunner-toolbar {
-	position: absolute;
-	top: 20px;
-	right: 0;
+	float: right;
 }
 #qunit-testrunner-toolbar input {
 	font: inherit;
@@ -74,28 +65,26 @@ body {
 #qunit-testrunner-toolbar label {
 	display: inline-block;
 }
-#qunit-testrunner-toolbar select {
-	position: absolute;
-	right: 24px;
-	top: 22px;
-}
 #qunit-modulefilter-container label {
 	display: none;
 }
 
 #qunit-banner {
-	height: 1px;
-	margin: 24px 0;
+	display: none;
 }
-#qunit-banner.qunit-fail {
-	background-color: #c33;
+#qunit-banner.qunit-fail ~ #qunit-userAgent {
+	border-top: 1px solid #c33;
 }
-#qunit-banner.qunit-pass {
-	background-color: #6c6;
+#qunit-banner.qunit-pass ~ #qunit-userAgent {
+	border-top: 1px solid #6c6;
 }
 
 #qunit-userAgent {
-	font: 9px/9px "Menlo", monospace;
+	padding-top: 2em;
+	clear: both;
+	font-family: "Menlo", monospace;
+	font-size: 9px;
+	font-weight: normal;
 	color: #666;
 }
 
@@ -104,7 +93,8 @@ body {
 #qunit-tests {
 	list-style-position: inside;
 	padding: 0;
-	font: 12px/24px "Menlo", monospace;
+	font-family: "Menlo", monospace;
+	font-size: 12px;
 	color: #666;
 }
 
@@ -119,8 +109,8 @@ body {
 }
 
 #qunit-tests li a {
-	color: #666;
 	padding: 0 6px;
+	color: #666;
 	text-decoration: none;
 }
 

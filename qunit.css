@@ -7,7 +7,6 @@ body {
 	background: #111 no-repeat linear-gradient(#222, #111);
 	margin: 0 auto;
 	max-width: 1024px;
-	min-width: 800px;
 	padding: 24px;
 	font: 12px/1.6 "Lucida Grande", sans-serif;
 	color: #ccc;
@@ -31,8 +30,96 @@ body {
 	text-decoration: underline;
 }
 
+#qunit-testrunner-toolbar {
+	float: right;
+	line-height: 2;
+}
+.qunit-url-config,
+#qunit-modulefilter,
+.qunit-filter {
+	margin-bottom: 1em;
+}
+.qunit-url-config {
+	display: block;
+}
+.qunit-url-config label {
+	margin-left: 2em;
+}
+#qunit-modulefilter,
+.qunit-filter {
+	display: inline-block;
+	margin-left: 2em;
+}
+#qunit-modulefilter {
+	position: relative;
+	line-height: 1;
+}
+#qunit-modulefilter-search {
+	box-sizing: border-box;
+	width: 250px;
+}
+#qunit-modulefilter-dropdown {
+	box-sizing: border-box;
+	width: 250px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	border: 1px solid #666;
+	border-top: none;
+	background: #111;
+}
+#qunit-modulefilter .clickable {
+	display: block;
+	padding: 0.4em 1em;
+	cursor: pointer;
+}
+#qunit-modulefilter-actions .clickable,
+#qunit-modulefilter-dropdown-list :first-child .clickable {
+	padding-top: 1em;
+}
+#qunit-modulefilter-actions .clickable,
+#qunit-modulefilter-dropdown-list :last-child .clickable {
+	padding-bottom: 1em;
+}
+#qunit-modulefilter .clickable.checked {
+	background: #222;
+}
+#qunit-modulefilter-actions button {
+	margin-top: 1em;
+	float: right;
+}
+#qunit-modulefilter-actions label {
+	display: block;
+}
+#qunit-modulefilter-dropdown-list {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #666;
+	overflow-y: hidden;
+}
+
+#qunit-banner {
+	display: none;
+}
+#qunit-banner.qunit-fail ~ #qunit-userAgent {
+	border-top: 1px solid #c33;
+}
+#qunit-banner.qunit-pass ~ #qunit-userAgent {
+	border-top: 1px solid #6c6;
+}
+
+#qunit-userAgent {
+	padding-top: 2em;
+	clear: both;
+	font-family: "Menlo", monospace;
+	font-size: 9px;
+	font-weight: normal;
+	color: #666;
+}
+
 #qunit-testresult {
-	font-family: "Menlo",monospace;
+	font-family: "Menlo", monospace;
 	font-size: 12px;
 	padding-bottom: 1em;
 }
@@ -53,39 +140,6 @@ body {
 }
 #qunit-testresult span.passed {
 	color: #6c6;
-}
-
-#qunit-testrunner-toolbar {
-	float: right;
-}
-#qunit-testrunner-toolbar input {
-	font: inherit;
-	margin: 0 6px 0 24px;
-}
-#qunit-testrunner-toolbar label {
-	display: inline-block;
-}
-#qunit-modulefilter-container label {
-	display: none;
-}
-
-#qunit-banner {
-	display: none;
-}
-#qunit-banner.qunit-fail ~ #qunit-userAgent {
-	border-top: 1px solid #c33;
-}
-#qunit-banner.qunit-pass ~ #qunit-userAgent {
-	border-top: 1px solid #6c6;
-}
-
-#qunit-userAgent {
-	padding-top: 2em;
-	clear: both;
-	font-family: "Menlo", monospace;
-	font-size: 9px;
-	font-weight: normal;
-	color: #666;
 }
 
 /* Test row */
@@ -160,6 +214,14 @@ body {
 	padding: 0 0 0 22px;
 }
 
+.qunit-assert-list li:hover {
+    color: #ccc;
+}
+
+.qunit-assert-list .runtime {
+	float: right;
+}
+
 .qunit-assert-list table {
 	border-collapse: collapse;
 }
@@ -200,13 +262,6 @@ body {
 }
 .qunit-assert-list table tr.test-source pre {
 	padding: 12px 24px 12px 0;
-}
-
-/* Unsupported */
-.qunit-filter,
-#qunit-testresult-controls,
-#qunit-modulefilter {
-	display: none;
 }
 
 /* Fixture */

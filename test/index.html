@@ -19,6 +19,16 @@ QUnit.module( "example", function() {
 		assert.propEqual(x, [ "42", "48" ], "check x" );
 	});
 } );
+QUnit.module( "another example", function() {
+	QUnit.test( "another pass", function( assert ) {
+		var x = 42;
+		assert.equal(x, 42, "check x" );
+	});
+	QUnit.test( "another pass also", function( assert ) {
+		var x = 42;
+		assert.equal(x, 42, "check x" );
+	});
+} );
 </script>
 <body>
 	<div id="qunit"></div>

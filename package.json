@@ -22,6 +22,6 @@
     "qunit.css"
   ],
   "devDependencies": {
-    "qunitjs": "~1.11.0"
+    "qunit": "2.8.0"
   }
 }

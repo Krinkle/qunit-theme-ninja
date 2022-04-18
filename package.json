@@ -2,12 +2,12 @@
   "name": "qunit-theme-ninja",
   "title": "QUnit Ninja Theme",
   "description": "A QUnit theme for ninjas.",
+  "version": "2.0.1",
   "keywords": [
     "qunit",
     "qunit-plugin",
     "qunit-theme"
   ],
-  "version": "2.0.0",
   "author": "Jamie Hoover <dont.tase@me.com>",
   "homepage": "https://github.com/Krinkle/qunit-theme-ninja",
   "repository": {
@@ -20,8 +20,5 @@
   "license": "MIT",
   "files": [
     "qunit.css"
-  ],
-  "devDependencies": {
-    "qunit": "2.8.0"
-  }
+  ]
 }

@@ -58,6 +58,10 @@ body {
 	box-sizing: border-box;
 	width: 250px;
 }
+#qunit-modulefilter-actions {
+	display: block;
+	overflow: hidden;
+}
 #qunit-modulefilter-dropdown {
 	box-sizing: border-box;
 	width: 250px;
@@ -71,22 +75,17 @@ body {
 }
 #qunit-modulefilter .clickable {
 	display: block;
-	padding: 0.4em 1em;
+	padding: 0.5em 0.5em;
 	cursor: pointer;
 }
-#qunit-modulefilter-actions .clickable,
-#qunit-modulefilter-dropdown-list :first-child .clickable {
-	padding-top: 1em;
-}
-#qunit-modulefilter-actions .clickable,
-#qunit-modulefilter-dropdown-list :last-child .clickable {
-	padding-bottom: 1em;
+#qunit-modulefilter-actions .clickable {
+	padding: 1em 0.5em;
 }
 #qunit-modulefilter .clickable.checked {
 	background: #222;
 }
 #qunit-modulefilter-actions button {
-	margin-top: 1em;
+	margin: 0.5em 0.25em;
 	float: right;
 }
 #qunit-modulefilter-actions label {
@@ -141,6 +140,12 @@ body {
 #qunit-testresult span.passed {
 	color: #6c6;
 }
+#qunit-testresult a {
+	color: #666;
+}
+#qunit-testresult a:hover {
+	color: #ccc;
+}
 
 /* Test row */
 
@@ -156,12 +161,11 @@ body {
 	font-weight: normal;
 }
 
-#qunit-tests li strong:hover {
+#qunit-tests li > strong:hover {
 	cursor: pointer;
 	color: #ccc;
 	text-decoration: underline;
 }
-
 #qunit-tests li a {
 	padding: 0 6px;
 	color: #666;
@@ -259,9 +263,6 @@ body {
 }
 .qunit-assert-list table tr.test-expected {
 	color: #6c6;
-}
-.qunit-assert-list table tr.test-source pre {
-	padding: 12px 24px 12px 0;
 }
 
 /* Fixture */

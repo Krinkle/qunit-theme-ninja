@@ -3,35 +3,46 @@
 <meta charset="UTF-8">
 <title>QUnit Test Suite</title>
 <link rel="stylesheet" href="../qunit.css">
-<script src="../node_modules/qunit/qunit/qunit.js"></script>
-<script>
-QUnit.test( "hello pass", function( assert ) {
-	var x = 42;
-	assert.equal(x, 42, "check x" );
-});
-QUnit.module( "example", function() {
-	QUnit.test( "hello pass also", function( assert ) {
-		var x = 42;
-		assert.equal(x, 42, "check x" );
-	});
-	QUnit.test( "hello fail", function( assert ) {
-		var x = [ "42", "43" ];
-		assert.propEqual(x, [ "42", "48" ], "check x" );
-	});
-} );
-QUnit.module( "another example", function() {
-	QUnit.test( "another pass", function( assert ) {
-		var x = 42;
-		assert.equal(x, 42, "check x" );
-	});
-	QUnit.test( "another pass also", function( assert ) {
-		var x = 42;
-		assert.equal(x, 42, "check x" );
-	});
-} );
-</script>
 <body>
 	<div id="qunit"></div>
-	<div id="qunit-fixture">test markup</div>
+	<div id="qunit-fixture"></div>
+
+	<script src="https://code.jquery.com/qunit/qunit-2.18.2.js"></script>
+	<script>
+	QUnit.test('hello pass', function (assert) {
+		var x = 1;
+		assert.equal(x, 1, 'x' );
+	});
+	QUnit.module('example', function() {
+		QUnit.test('hello pass also', function (assert) {
+			var x = 2;
+			assert.equal(x, 2, 'x' );
+			var y = 3;
+			assert.equal(y, 3, 'y' );
+		});
+		QUnit.test('hello fail', function (assert) {
+			var x = 42;
+			assert.equal(x, 42, 'x' );
+			var y = { foo: '50', quux: '62' };
+			assert.propEqual(y, { foo: '50', quux: '70' }, 'y' );
+		});
+	});
+	QUnit.module('another example', function() {
+		QUnit.test('another pass', function (assert) {
+			var x = 42;
+			assert.true(true, 'x' );
+		});
+		QUnit.test('another pass also', function (assert) {
+			var x = 42;
+			assert.true(true, 'x' );
+		});
+	});
+	QUnit.module('last example', function() {
+		QUnit.test('hello pass', function (assert) {
+			var x = 1;
+			assert.equal(x, 1, 'x' );
+		});
+	} );
+	</script>
 </body>
 </html>
